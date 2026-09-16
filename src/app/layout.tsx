@@ -14,12 +14,15 @@ import { TooltipProvider } from '@/components/ui/tooltip'
 
 // Util Imports
 import { cn } from '@/lib/utils'
+import { withBasePath } from '@/lib/with-base-path'
 
 // Style Imports
 import './globals.css'
 import ScrollToTop from '@/components/layout/ScrollToTop'
 
 import DownloadButton from '@/components/layout/Download'
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -35,17 +38,17 @@ export const metadata: Metadata = {
   title: 'AdminCN - Free Shadcn Admin Dashboard Template',
   description:
     'Build modern admin dashboards faster with AdminCN Free. A free shadcn admin dashboard template built with Tailwind CSS, featuring responsive layouts and essential pages.',
-  metadataBase: new URL(`${process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000'}`),
+  metadataBase: new URL(new URL(siteUrl).origin),
   openGraph: {
     title: 'AdminCN - Free Shadcn Admin Dashboard Template',
     description:
       'Build modern admin dashboards faster with AdminCN Free. A free shadcn admin dashboard template built with Tailwind CSS, featuring responsive layouts and essential pages.',
     type: 'website',
     siteName: 'AdminCN',
-    url: process.env.NEXT_PUBLIC_APP_URL,
+    url: siteUrl,
     images: [
       {
-        url: '/images/og-image.png',
+        url: withBasePath('/images/og-image.png'),
         type: 'image/png',
         width: 1200,
         height: 630,

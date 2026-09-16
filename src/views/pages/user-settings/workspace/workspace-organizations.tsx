@@ -9,25 +9,26 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Dialog, DialogClose, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog'
 import { Separator } from '@/components/ui/separator'
+import { withBasePath } from '@/lib/with-base-path'
 
 const WorkspaceOrganizations = () => {
   const organizations = [
     {
       id: 'notion',
       name: 'Notion',
-      img: '/images/brands/notion-white.webp',
+      img: withBasePath('/images/brands/notion-white.webp'),
       description: 'member and collaborator on product and docs projects'
     },
     {
       id: 'github',
       name: 'Github',
-      img: '/images/brands/github-white.webp',
+      img: withBasePath('/images/brands/github-white.webp'),
       description: 'repository collaborator and CI maintainer'
     },
     {
       id: 'discord',
       name: 'Discord',
-      img: '/images/brands/discord.webp',
+      img: withBasePath('/images/brands/discord.webp'),
       description: 'community moderator and support channel member'
     }
   ]

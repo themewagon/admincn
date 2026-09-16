@@ -6,6 +6,7 @@ import type { Email } from '@/types/apps/mail-types'
 
 // Config Imports
 import { MAIL_CURRENT_USER } from '@/configs/mailConfig'
+import { withBasePath } from '@/lib/with-base-path'
 
 const now = new Date()
 const hoursAgo = (hours: number) => subHours(now, hours)
@@ -17,7 +18,7 @@ export const db: Email[] = [
     id: '1',
     from: 'Sarah Johnson',
     fromEmail: 'sarah.johnson@example.com',
-    avatar: '/images/avatars/avatar-3.webp?seed=Sarah',
+    avatar: withBasePath('/images/avatars/avatar-3.webp?seed=Sarah'),
     subject: 'Q4 Marketing Campaign Review',
     preview: "Thanks for the feedback — I'll incorporate your suggestions into the Q1 plan.",
     body: "Thanks for the feedback — I'll incorporate your suggestions into the Q1 plan.\n\nLet's sync on Monday to finalize the deck.\n\nBest,\nSarah",
@@ -64,7 +65,7 @@ export const db: Email[] = [
     id: '2',
     from: 'Michael Chen',
     fromEmail: 'michael.chen@example.com',
-    avatar: '/images/avatars/avatar-4.webp?seed=Michael',
+    avatar: withBasePath('/images/avatars/avatar-4.webp?seed=Michael'),
     subject: 'Project Timeline Update',
     preview: 'Hello, Just a quick update on the timeline for the new dashboard...',
     body: "Hello,\n\nJust a quick update on the timeline for the new dashboard project. We're currently on track to complete Phase 1 by the end of this month.\n\nNext steps:\n1. Complete UI design review\n2. Backend API integration\n3. Testing and QA\n\nPlease let me know if you have any concerns.\n\nThanks,\nMichael",
@@ -89,7 +90,7 @@ export const db: Email[] = [
     id: '3',
     from: 'Emma Wilson',
     fromEmail: 'emma.wilson@example.com',
-    avatar: '/images/avatars/avatar-6.webp?seed=Emma',
+    avatar: withBasePath('/images/avatars/avatar-6.webp?seed=Emma'),
     subject: 'Re: Team Lunch Tomorrow',
     preview: 'Perfect — see you at 12:30 at the usual spot!',
     body: 'Perfect — see you at 12:30 at the usual spot!\n\nEmma',
@@ -203,7 +204,7 @@ export const db: Email[] = [
     id: '7',
     from: 'Alex Thompson',
     fromEmail: 'alex.thompson@example.com',
-    avatar: '/images/avatars/avatar-7.webp?seed=Alex',
+    avatar: withBasePath('/images/avatars/avatar-7.webp?seed=Alex'),
     subject: 'Server Maintenance Notice',
     preview: 'Scheduled maintenance this Saturday from 2 AM to 6 AM...',
     body: 'Scheduled maintenance this Saturday from 2 AM to 6 AM.\n\nWhat to expect:\n- Brief service interruptions\n- System upgrades\n- Security patches\n\nAll services will be fully restored by 6 AM.\n\nAlex\nIT Operations',
@@ -228,7 +229,7 @@ export const db: Email[] = [
     id: '8',
     from: 'Rachel Green',
     fromEmail: 'rachel.green@example.com',
-    avatar: '/images/avatars/avatar-8.webp?seed=Rachel',
+    avatar: withBasePath('/images/avatars/avatar-8.webp?seed=Rachel'),
     subject: 'Team Building Event',
     preview: 'Excited to announce our upcoming team building event!',
     body: 'Excited to announce our upcoming team building event!\n\nDate: June 15, 2026\nTime: 10 AM - 4 PM\nLocation: Central Park\n\nActivities:\n- Team challenges\n- BBQ lunch\n- Sports activities\n\nPlease RSVP by June 8.\n\nLooking forward to seeing everyone there!\n\nRachel',
@@ -305,7 +306,7 @@ export const db: Email[] = [
     id: '11',
     from: 'System Administrator',
     fromEmail: 'noreply@example.com',
-    avatar: '/images/avatars/avatar-10.webp?seed=System',
+    avatar: withBasePath('/images/avatars/avatar-10.webp?seed=System'),
     subject: 'Password Reset Confirmation',
     preview: 'Your password was successfully reset...',
     body: 'Your password was successfully reset on June 1, 2026 at 3:45 PM.\n\nIf you did not make this change, please contact IT support immediately.\n\nBest regards,\nSystem Administrator',
@@ -354,7 +355,7 @@ export const db: Email[] = [
     id: '13',
     from: 'Amazon Deals',
     fromEmail: 'deals@amazon.example.com',
-    avatar: '/images/avatars/avatar-11.webp?seed=Amazon',
+    avatar: withBasePath('/images/avatars/avatar-11.webp?seed=Amazon'),
     subject: 'Your cart is waiting — 15% off today only',
     preview: 'Items in your cart are on sale. Complete your purchase before midnight.',
     body: 'Items in your cart are on sale. Complete your purchase before midnight.\n\nFeatured deals:\n- Wireless headphones — 15% off\n- USB-C hub — 20% off\n\nShop now and save!\n\nAmazon Deals',
@@ -403,7 +404,7 @@ export const db: Email[] = [
     id: '15',
     from: 'Dev Community',
     fromEmail: 'digest@devcommunity.example.com',
-    avatar: '/images/avatars/avatar-12.webp?seed=Dev',
+    avatar: withBasePath('/images/avatars/avatar-12.webp?seed=Dev'),
     subject: 'Weekly digest: Top posts in React & Next.js',
     preview: "This week's most popular discussions from the developer community.",
     body: 'This week\'s most popular discussions from the developer community.\n\n1. "Server Components vs Client Components"\n2. "Best practices for App Router"\n3. "State management in 2026"\n\nJoin the conversation!\n\nDev Community',

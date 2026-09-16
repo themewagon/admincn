@@ -1,5 +1,6 @@
 // Type Imports
 import type { AppUser } from '@/types/apps/user-types'
+import { withBasePath } from '@/lib/with-base-path'
 
 type UserViewProfileData = Pick<AppUser, 'twoFactorEnabled' | 'recentDevices' | 'notificationSettings'>
 
@@ -84,7 +85,7 @@ export const users: AppUser[] = [
     country: 'United States',
     contact: '+1 (555) 200-1000',
     joinedDate: '2022-01-14T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-1.webp',
+    avatar: withBasePath('/images/avatars/avatar-1.webp'),
     socialLinks: [
       {
         platform: 'twitter',
@@ -110,15 +111,15 @@ export const users: AppUser[] = [
         id: 'proj-001',
         name: 'BGC eCommerce App',
         type: 'React Project',
-        logo: '/images/brands/figma-icon.webp',
+        logo: withBasePath('/images/brands/figma-icon.webp'),
         leader: 'Eileen',
         team: [
           {
-            avatar: '/images/avatars/avatar-1.webp',
+            avatar: withBasePath('/images/avatars/avatar-1.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-2.webp',
+            avatar: withBasePath('/images/avatars/avatar-2.webp'),
             initials: 'JM'
           },
           {
@@ -133,15 +134,15 @@ export const users: AppUser[] = [
         id: 'proj-002',
         name: 'Falcon Logo Design',
         type: 'Figma Project',
-        logo: '/images/brands/notion-white.webp',
+        logo: withBasePath('/images/brands/notion-white.webp'),
         leader: 'James',
         team: [
           {
-            avatar: '/images/avatars/avatar-3.webp',
+            avatar: withBasePath('/images/avatars/avatar-3.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-4.webp',
+            avatar: withBasePath('/images/avatars/avatar-4.webp'),
             initials: 'JM'
           },
           {
@@ -156,15 +157,15 @@ export const users: AppUser[] = [
         id: 'proj-003',
         name: 'Dashboard Design',
         type: 'Vue Project',
-        logo: '/images/brands/asana-icon-circle.webp',
+        logo: withBasePath('/images/brands/asana-icon-circle.webp'),
         leader: 'Sarah',
         team: [
           {
-            avatar: '/images/avatars/avatar-5.webp',
+            avatar: withBasePath('/images/avatars/avatar-5.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-6.webp',
+            avatar: withBasePath('/images/avatars/avatar-6.webp'),
             initials: 'JM'
           },
           {
@@ -179,15 +180,15 @@ export const users: AppUser[] = [
         id: 'proj-004',
         name: 'Foodista Mobile App',
         type: 'Angular Project',
-        logo: '/images/brands/dropbox-icon-circle.webp',
+        logo: withBasePath('/images/brands/dropbox-icon-circle.webp'),
         leader: 'Marcus',
         team: [
           {
-            avatar: '/images/avatars/avatar-7.webp',
+            avatar: withBasePath('/images/avatars/avatar-7.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-8.webp',
+            avatar: withBasePath('/images/avatars/avatar-8.webp'),
             initials: 'JM'
           },
           {
@@ -218,7 +219,7 @@ export const users: AppUser[] = [
         person: {
           name: 'Lester McCarthy (Client)',
           role: 'CEO of Pixinvent',
-          avatar: '/images/avatars/avatar-9.webp',
+          avatar: withBasePath('/images/avatars/avatar-9.webp'),
           initials: 'LM'
         }
       },
@@ -231,17 +232,17 @@ export const users: AppUser[] = [
           {
             name: 'John Doe',
             initials: 'JD',
-            avatar: '/images/avatars/avatar-10.webp'
+            avatar: withBasePath('/images/avatars/avatar-10.webp')
           },
           {
             name: 'Anna Richard',
             initials: 'AR',
-            avatar: '/images/avatars/avatar-11.webp'
+            avatar: withBasePath('/images/avatars/avatar-11.webp')
           },
           {
             name: 'Bob Carter',
             initials: 'BC',
-            avatar: '/images/avatars/avatar-12.webp'
+            avatar: withBasePath('/images/avatars/avatar-12.webp')
           }
         ],
         teamExtraCount: 3
@@ -319,7 +320,7 @@ export const users: AppUser[] = [
     country: 'United Kingdom',
     contact: '+1 (555) 201-1013',
     joinedDate: '2022-03-22T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-2.webp',
+    avatar: withBasePath('/images/avatars/avatar-2.webp'),
     socialLinks: [
       {
         platform: 'linkedin',
@@ -341,15 +342,15 @@ export const users: AppUser[] = [
         id: 'proj-011',
         name: 'Dojo Email App',
         type: 'Figma Project',
-        logo: '/images/brands/slack-icon.webp',
+        logo: withBasePath('/images/brands/slack-icon.webp'),
         leader: 'James',
         team: [
           {
-            avatar: '/images/avatars/avatar-17.webp',
+            avatar: withBasePath('/images/avatars/avatar-17.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-18.webp',
+            avatar: withBasePath('/images/avatars/avatar-18.webp'),
             initials: 'JM'
           },
           {
@@ -364,15 +365,15 @@ export const users: AppUser[] = [
         id: 'proj-012',
         name: 'Tailwind CSS Kit',
         type: 'Vue Project',
-        logo: '/images/brands/google-icon.webp',
+        logo: withBasePath('/images/brands/google-icon.webp'),
         leader: 'Sarah',
         team: [
           {
-            avatar: '/images/avatars/avatar-19.webp',
+            avatar: withBasePath('/images/avatars/avatar-19.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-20.webp',
+            avatar: withBasePath('/images/avatars/avatar-20.webp'),
             initials: 'JM'
           },
           {
@@ -387,15 +388,15 @@ export const users: AppUser[] = [
         id: 'proj-013',
         name: 'Admin Template Pro',
         type: 'Angular Project',
-        logo: '/images/brands/figma-icon.webp',
+        logo: withBasePath('/images/brands/figma-icon.webp'),
         leader: 'Marcus',
         team: [
           {
-            avatar: '/images/avatars/avatar-1.webp',
+            avatar: withBasePath('/images/avatars/avatar-1.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-2.webp',
+            avatar: withBasePath('/images/avatars/avatar-2.webp'),
             initials: 'JM'
           },
           {
@@ -410,15 +411,15 @@ export const users: AppUser[] = [
         id: 'proj-014',
         name: 'Mobile Banking App',
         type: 'Node Project',
-        logo: '/images/brands/notion-white.webp',
+        logo: withBasePath('/images/brands/notion-white.webp'),
         leader: 'Priya',
         team: [
           {
-            avatar: '/images/avatars/avatar-3.webp',
+            avatar: withBasePath('/images/avatars/avatar-3.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-4.webp',
+            avatar: withBasePath('/images/avatars/avatar-4.webp'),
             initials: 'JM'
           },
           {
@@ -433,15 +434,15 @@ export const users: AppUser[] = [
         id: 'proj-015',
         name: 'Figma UI Kit',
         type: 'React Project',
-        logo: '/images/brands/asana-icon-circle.webp',
+        logo: withBasePath('/images/brands/asana-icon-circle.webp'),
         leader: 'Tom',
         team: [
           {
-            avatar: '/images/avatars/avatar-5.webp',
+            avatar: withBasePath('/images/avatars/avatar-5.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-6.webp',
+            avatar: withBasePath('/images/avatars/avatar-6.webp'),
             initials: 'JM'
           },
           {
@@ -472,7 +473,7 @@ export const users: AppUser[] = [
         person: {
           name: 'Lester McCarthy (Client)',
           role: 'CEO of Pixinvent',
-          avatar: '/images/avatars/avatar-7.webp',
+          avatar: withBasePath('/images/avatars/avatar-7.webp'),
           initials: 'LM'
         }
       },
@@ -485,17 +486,17 @@ export const users: AppUser[] = [
           {
             name: 'John Doe',
             initials: 'JD',
-            avatar: '/images/avatars/avatar-8.webp'
+            avatar: withBasePath('/images/avatars/avatar-8.webp')
           },
           {
             name: 'Anna Richard',
             initials: 'AR',
-            avatar: '/images/avatars/avatar-9.webp'
+            avatar: withBasePath('/images/avatars/avatar-9.webp')
           },
           {
             name: 'Bob Carter',
             initials: 'BC',
-            avatar: '/images/avatars/avatar-10.webp'
+            avatar: withBasePath('/images/avatars/avatar-10.webp')
           }
         ],
         teamExtraCount: 3
@@ -581,7 +582,7 @@ export const users: AppUser[] = [
     country: 'Canada',
     contact: '+1 (555) 202-1026',
     joinedDate: '2022-05-08T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-3.webp',
+    avatar: withBasePath('/images/avatars/avatar-3.webp'),
     socialLinks: [
       {
         platform: 'twitter',
@@ -603,15 +604,15 @@ export const users: AppUser[] = [
         id: 'proj-021',
         name: 'BGC eCommerce App',
         type: 'Vue Project',
-        logo: '/images/brands/dropbox-icon-circle.webp',
+        logo: withBasePath('/images/brands/dropbox-icon-circle.webp'),
         leader: 'Sarah',
         team: [
           {
-            avatar: '/images/avatars/avatar-15.webp',
+            avatar: withBasePath('/images/avatars/avatar-15.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-16.webp',
+            avatar: withBasePath('/images/avatars/avatar-16.webp'),
             initials: 'JM'
           },
           {
@@ -626,15 +627,15 @@ export const users: AppUser[] = [
         id: 'proj-022',
         name: 'Dashboard Design',
         type: 'Angular Project',
-        logo: '/images/brands/slack-icon.webp',
+        logo: withBasePath('/images/brands/slack-icon.webp'),
         leader: 'Marcus',
         team: [
           {
-            avatar: '/images/avatars/avatar-17.webp',
+            avatar: withBasePath('/images/avatars/avatar-17.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-18.webp',
+            avatar: withBasePath('/images/avatars/avatar-18.webp'),
             initials: 'JM'
           },
           {
@@ -649,15 +650,15 @@ export const users: AppUser[] = [
         id: 'proj-023',
         name: 'Foodista Mobile App',
         type: 'Node Project',
-        logo: '/images/brands/google-icon.webp',
+        logo: withBasePath('/images/brands/google-icon.webp'),
         leader: 'Priya',
         team: [
           {
-            avatar: '/images/avatars/avatar-19.webp',
+            avatar: withBasePath('/images/avatars/avatar-19.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-20.webp',
+            avatar: withBasePath('/images/avatars/avatar-20.webp'),
             initials: 'JM'
           },
           {
@@ -672,15 +673,15 @@ export const users: AppUser[] = [
         id: 'proj-024',
         name: 'Dojo Email App',
         type: 'React Project',
-        logo: '/images/brands/figma-icon.webp',
+        logo: withBasePath('/images/brands/figma-icon.webp'),
         leader: 'Tom',
         team: [
           {
-            avatar: '/images/avatars/avatar-1.webp',
+            avatar: withBasePath('/images/avatars/avatar-1.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-2.webp',
+            avatar: withBasePath('/images/avatars/avatar-2.webp'),
             initials: 'JM'
           },
           {
@@ -695,15 +696,15 @@ export const users: AppUser[] = [
         id: 'proj-025',
         name: 'Tailwind CSS Kit',
         type: 'Figma Project',
-        logo: '/images/brands/notion-white.webp',
+        logo: withBasePath('/images/brands/notion-white.webp'),
         leader: 'Lisa',
         team: [
           {
-            avatar: '/images/avatars/avatar-3.webp',
+            avatar: withBasePath('/images/avatars/avatar-3.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-4.webp',
+            avatar: withBasePath('/images/avatars/avatar-4.webp'),
             initials: 'JM'
           },
           {
@@ -718,15 +719,15 @@ export const users: AppUser[] = [
         id: 'proj-026',
         name: 'BGC eCommerce App',
         type: 'Vue Project',
-        logo: '/images/brands/asana-icon-circle.webp',
+        logo: withBasePath('/images/brands/asana-icon-circle.webp'),
         leader: 'David',
         team: [
           {
-            avatar: '/images/avatars/avatar-5.webp',
+            avatar: withBasePath('/images/avatars/avatar-5.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-6.webp',
+            avatar: withBasePath('/images/avatars/avatar-6.webp'),
             initials: 'JM'
           },
           {
@@ -757,7 +758,7 @@ export const users: AppUser[] = [
         person: {
           name: 'Lester McCarthy (Client)',
           role: 'CEO of Pixinvent',
-          avatar: '/images/avatars/avatar-7.webp',
+          avatar: withBasePath('/images/avatars/avatar-7.webp'),
           initials: 'LM'
         }
       },
@@ -770,17 +771,17 @@ export const users: AppUser[] = [
           {
             name: 'John Doe',
             initials: 'JD',
-            avatar: '/images/avatars/avatar-8.webp'
+            avatar: withBasePath('/images/avatars/avatar-8.webp')
           },
           {
             name: 'Anna Richard',
             initials: 'AR',
-            avatar: '/images/avatars/avatar-9.webp'
+            avatar: withBasePath('/images/avatars/avatar-9.webp')
           },
           {
             name: 'Bob Carter',
             initials: 'BC',
-            avatar: '/images/avatars/avatar-10.webp'
+            avatar: withBasePath('/images/avatars/avatar-10.webp')
           }
         ],
         teamExtraCount: 3
@@ -872,7 +873,7 @@ export const users: AppUser[] = [
     country: 'Australia',
     contact: '+1 (555) 203-1039',
     joinedDate: '2022-07-19T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-4.webp',
+    avatar: withBasePath('/images/avatars/avatar-4.webp'),
     socialLinks: [
       {
         platform: 'linkedin',
@@ -898,15 +899,15 @@ export const users: AppUser[] = [
         id: 'proj-031',
         name: 'Falcon Logo Design',
         type: 'Angular Project',
-        logo: '/images/brands/dropbox-icon-circle.webp',
+        logo: withBasePath('/images/brands/dropbox-icon-circle.webp'),
         leader: 'Marcus',
         team: [
           {
-            avatar: '/images/avatars/avatar-15.webp',
+            avatar: withBasePath('/images/avatars/avatar-15.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-16.webp',
+            avatar: withBasePath('/images/avatars/avatar-16.webp'),
             initials: 'JM'
           },
           {
@@ -921,15 +922,15 @@ export const users: AppUser[] = [
         id: 'proj-032',
         name: 'Admin Template Pro',
         type: 'Node Project',
-        logo: '/images/brands/slack-icon.webp',
+        logo: withBasePath('/images/brands/slack-icon.webp'),
         leader: 'Priya',
         team: [
           {
-            avatar: '/images/avatars/avatar-17.webp',
+            avatar: withBasePath('/images/avatars/avatar-17.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-18.webp',
+            avatar: withBasePath('/images/avatars/avatar-18.webp'),
             initials: 'JM'
           },
           {
@@ -944,15 +945,15 @@ export const users: AppUser[] = [
         id: 'proj-033',
         name: 'Mobile Banking App',
         type: 'React Project',
-        logo: '/images/brands/google-icon.webp',
+        logo: withBasePath('/images/brands/google-icon.webp'),
         leader: 'Tom',
         team: [
           {
-            avatar: '/images/avatars/avatar-19.webp',
+            avatar: withBasePath('/images/avatars/avatar-19.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-20.webp',
+            avatar: withBasePath('/images/avatars/avatar-20.webp'),
             initials: 'JM'
           },
           {
@@ -967,15 +968,15 @@ export const users: AppUser[] = [
         id: 'proj-034',
         name: 'BGC eCommerce App',
         type: 'Figma Project',
-        logo: '/images/brands/figma-icon.webp',
+        logo: withBasePath('/images/brands/figma-icon.webp'),
         leader: 'Lisa',
         team: [
           {
-            avatar: '/images/avatars/avatar-1.webp',
+            avatar: withBasePath('/images/avatars/avatar-1.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-2.webp',
+            avatar: withBasePath('/images/avatars/avatar-2.webp'),
             initials: 'JM'
           },
           {
@@ -990,15 +991,15 @@ export const users: AppUser[] = [
         id: 'proj-035',
         name: 'Falcon Logo Design',
         type: 'Vue Project',
-        logo: '/images/brands/notion-white.webp',
+        logo: withBasePath('/images/brands/notion-white.webp'),
         leader: 'David',
         team: [
           {
-            avatar: '/images/avatars/avatar-3.webp',
+            avatar: withBasePath('/images/avatars/avatar-3.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-4.webp',
+            avatar: withBasePath('/images/avatars/avatar-4.webp'),
             initials: 'JM'
           },
           {
@@ -1013,15 +1014,15 @@ export const users: AppUser[] = [
         id: 'proj-036',
         name: 'Admin Template Pro',
         type: 'Angular Project',
-        logo: '/images/brands/asana-icon-circle.webp',
+        logo: withBasePath('/images/brands/asana-icon-circle.webp'),
         leader: 'Nina',
         team: [
           {
-            avatar: '/images/avatars/avatar-5.webp',
+            avatar: withBasePath('/images/avatars/avatar-5.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-6.webp',
+            avatar: withBasePath('/images/avatars/avatar-6.webp'),
             initials: 'JM'
           },
           {
@@ -1036,15 +1037,15 @@ export const users: AppUser[] = [
         id: 'proj-037',
         name: 'Mobile Banking App',
         type: 'Node Project',
-        logo: '/images/brands/dropbox-icon-circle.webp',
+        logo: withBasePath('/images/brands/dropbox-icon-circle.webp'),
         leader: 'Alex',
         team: [
           {
-            avatar: '/images/avatars/avatar-7.webp',
+            avatar: withBasePath('/images/avatars/avatar-7.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-8.webp',
+            avatar: withBasePath('/images/avatars/avatar-8.webp'),
             initials: 'JM'
           },
           {
@@ -1075,7 +1076,7 @@ export const users: AppUser[] = [
         person: {
           name: 'Lester McCarthy (Client)',
           role: 'CEO of Pixinvent',
-          avatar: '/images/avatars/avatar-9.webp',
+          avatar: withBasePath('/images/avatars/avatar-9.webp'),
           initials: 'LM'
         }
       },
@@ -1088,17 +1089,17 @@ export const users: AppUser[] = [
           {
             name: 'John Doe',
             initials: 'JD',
-            avatar: '/images/avatars/avatar-10.webp'
+            avatar: withBasePath('/images/avatars/avatar-10.webp')
           },
           {
             name: 'Anna Richard',
             initials: 'AR',
-            avatar: '/images/avatars/avatar-11.webp'
+            avatar: withBasePath('/images/avatars/avatar-11.webp')
           },
           {
             name: 'Bob Carter',
             initials: 'BC',
-            avatar: '/images/avatars/avatar-12.webp'
+            avatar: withBasePath('/images/avatars/avatar-12.webp')
           }
         ],
         teamExtraCount: 3
@@ -1177,7 +1178,7 @@ export const users: AppUser[] = [
     country: 'Germany',
     contact: '+1 (555) 204-1052',
     joinedDate: '2022-09-30T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-5.webp',
+    avatar: withBasePath('/images/avatars/avatar-5.webp'),
     socialLinks: [
       {
         platform: 'github',
@@ -1199,15 +1200,15 @@ export const users: AppUser[] = [
         id: 'proj-041',
         name: 'Dashboard Design',
         type: 'Node Project',
-        logo: '/images/brands/slack-icon.webp',
+        logo: withBasePath('/images/brands/slack-icon.webp'),
         leader: 'Priya',
         team: [
           {
-            avatar: '/images/avatars/avatar-17.webp',
+            avatar: withBasePath('/images/avatars/avatar-17.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-18.webp',
+            avatar: withBasePath('/images/avatars/avatar-18.webp'),
             initials: 'JM'
           },
           {
@@ -1222,15 +1223,15 @@ export const users: AppUser[] = [
         id: 'proj-042',
         name: 'Foodista Mobile App',
         type: 'React Project',
-        logo: '/images/brands/google-icon.webp',
+        logo: withBasePath('/images/brands/google-icon.webp'),
         leader: 'Tom',
         team: [
           {
-            avatar: '/images/avatars/avatar-19.webp',
+            avatar: withBasePath('/images/avatars/avatar-19.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-20.webp',
+            avatar: withBasePath('/images/avatars/avatar-20.webp'),
             initials: 'JM'
           },
           {
@@ -1245,15 +1246,15 @@ export const users: AppUser[] = [
         id: 'proj-043',
         name: 'Dojo Email App',
         type: 'Figma Project',
-        logo: '/images/brands/figma-icon.webp',
+        logo: withBasePath('/images/brands/figma-icon.webp'),
         leader: 'Lisa',
         team: [
           {
-            avatar: '/images/avatars/avatar-1.webp',
+            avatar: withBasePath('/images/avatars/avatar-1.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-2.webp',
+            avatar: withBasePath('/images/avatars/avatar-2.webp'),
             initials: 'JM'
           },
           {
@@ -1268,15 +1269,15 @@ export const users: AppUser[] = [
         id: 'proj-044',
         name: 'Tailwind CSS Kit',
         type: 'Vue Project',
-        logo: '/images/brands/notion-white.webp',
+        logo: withBasePath('/images/brands/notion-white.webp'),
         leader: 'David',
         team: [
           {
-            avatar: '/images/avatars/avatar-3.webp',
+            avatar: withBasePath('/images/avatars/avatar-3.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-4.webp',
+            avatar: withBasePath('/images/avatars/avatar-4.webp'),
             initials: 'JM'
           },
           {
@@ -1307,7 +1308,7 @@ export const users: AppUser[] = [
         person: {
           name: 'Lester McCarthy (Client)',
           role: 'CEO of Pixinvent',
-          avatar: '/images/avatars/avatar-5.webp',
+          avatar: withBasePath('/images/avatars/avatar-5.webp'),
           initials: 'LM'
         }
       },
@@ -1320,17 +1321,17 @@ export const users: AppUser[] = [
           {
             name: 'John Doe',
             initials: 'JD',
-            avatar: '/images/avatars/avatar-6.webp'
+            avatar: withBasePath('/images/avatars/avatar-6.webp')
           },
           {
             name: 'Anna Richard',
             initials: 'AR',
-            avatar: '/images/avatars/avatar-7.webp'
+            avatar: withBasePath('/images/avatars/avatar-7.webp')
           },
           {
             name: 'Bob Carter',
             initials: 'BC',
-            avatar: '/images/avatars/avatar-8.webp'
+            avatar: withBasePath('/images/avatars/avatar-8.webp')
           }
         ],
         teamExtraCount: 3
@@ -1415,7 +1416,7 @@ export const users: AppUser[] = [
     country: 'France',
     contact: '+1 (555) 205-1065',
     joinedDate: '2022-11-12T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-6.webp',
+    avatar: withBasePath('/images/avatars/avatar-6.webp'),
     socialLinks: [
       {
         platform: 'twitter',
@@ -1437,15 +1438,15 @@ export const users: AppUser[] = [
         id: 'proj-051',
         name: 'BGC eCommerce App',
         type: 'React Project',
-        logo: '/images/brands/asana-icon-circle.webp',
+        logo: withBasePath('/images/brands/asana-icon-circle.webp'),
         leader: 'Tom',
         team: [
           {
-            avatar: '/images/avatars/avatar-12.webp',
+            avatar: withBasePath('/images/avatars/avatar-12.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-13.webp',
+            avatar: withBasePath('/images/avatars/avatar-13.webp'),
             initials: 'JM'
           },
           {
@@ -1460,15 +1461,15 @@ export const users: AppUser[] = [
         id: 'proj-052',
         name: 'Mobile Banking App',
         type: 'Figma Project',
-        logo: '/images/brands/dropbox-icon-circle.webp',
+        logo: withBasePath('/images/brands/dropbox-icon-circle.webp'),
         leader: 'Lisa',
         team: [
           {
-            avatar: '/images/avatars/avatar-14.webp',
+            avatar: withBasePath('/images/avatars/avatar-14.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-15.webp',
+            avatar: withBasePath('/images/avatars/avatar-15.webp'),
             initials: 'JM'
           },
           {
@@ -1483,15 +1484,15 @@ export const users: AppUser[] = [
         id: 'proj-053',
         name: 'Falcon Logo Design',
         type: 'Vue Project',
-        logo: '/images/brands/slack-icon.webp',
+        logo: withBasePath('/images/brands/slack-icon.webp'),
         leader: 'David',
         team: [
           {
-            avatar: '/images/avatars/avatar-16.webp',
+            avatar: withBasePath('/images/avatars/avatar-16.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-17.webp',
+            avatar: withBasePath('/images/avatars/avatar-17.webp'),
             initials: 'JM'
           },
           {
@@ -1506,15 +1507,15 @@ export const users: AppUser[] = [
         id: 'proj-054',
         name: 'Dojo Email App',
         type: 'Angular Project',
-        logo: '/images/brands/google-icon.webp',
+        logo: withBasePath('/images/brands/google-icon.webp'),
         leader: 'Nina',
         team: [
           {
-            avatar: '/images/avatars/avatar-18.webp',
+            avatar: withBasePath('/images/avatars/avatar-18.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-19.webp',
+            avatar: withBasePath('/images/avatars/avatar-19.webp'),
             initials: 'JM'
           },
           {
@@ -1529,15 +1530,15 @@ export const users: AppUser[] = [
         id: 'proj-055',
         name: 'BGC eCommerce App',
         type: 'Node Project',
-        logo: '/images/brands/figma-icon.webp',
+        logo: withBasePath('/images/brands/figma-icon.webp'),
         leader: 'Alex',
         team: [
           {
-            avatar: '/images/avatars/avatar-20.webp',
+            avatar: withBasePath('/images/avatars/avatar-20.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-1.webp',
+            avatar: withBasePath('/images/avatars/avatar-1.webp'),
             initials: 'JM'
           },
           {
@@ -1568,7 +1569,7 @@ export const users: AppUser[] = [
         person: {
           name: 'Lester McCarthy (Client)',
           role: 'CEO of Pixinvent',
-          avatar: '/images/avatars/avatar-2.webp',
+          avatar: withBasePath('/images/avatars/avatar-2.webp'),
           initials: 'LM'
         }
       },
@@ -1581,17 +1582,17 @@ export const users: AppUser[] = [
           {
             name: 'John Doe',
             initials: 'JD',
-            avatar: '/images/avatars/avatar-3.webp'
+            avatar: withBasePath('/images/avatars/avatar-3.webp')
           },
           {
             name: 'Anna Richard',
             initials: 'AR',
-            avatar: '/images/avatars/avatar-4.webp'
+            avatar: withBasePath('/images/avatars/avatar-4.webp')
           },
           {
             name: 'Bob Carter',
             initials: 'BC',
-            avatar: '/images/avatars/avatar-5.webp'
+            avatar: withBasePath('/images/avatars/avatar-5.webp')
           }
         ],
         teamExtraCount: 3
@@ -1684,7 +1685,7 @@ export const users: AppUser[] = [
     country: 'India',
     contact: '+1 (555) 206-1078',
     joinedDate: '2023-01-25T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-7.webp',
+    avatar: withBasePath('/images/avatars/avatar-7.webp'),
     socialLinks: [
       {
         platform: 'linkedin',
@@ -1706,15 +1707,15 @@ export const users: AppUser[] = [
         id: 'proj-061',
         name: 'Tailwind CSS Kit',
         type: 'Figma Project',
-        logo: '/images/brands/notion-white.webp',
+        logo: withBasePath('/images/brands/notion-white.webp'),
         leader: 'Lisa',
         team: [
           {
-            avatar: '/images/avatars/avatar-10.webp',
+            avatar: withBasePath('/images/avatars/avatar-10.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-11.webp',
+            avatar: withBasePath('/images/avatars/avatar-11.webp'),
             initials: 'JM'
           },
           {
@@ -1729,15 +1730,15 @@ export const users: AppUser[] = [
         id: 'proj-062',
         name: 'Admin Template Pro',
         type: 'Vue Project',
-        logo: '/images/brands/asana-icon-circle.webp',
+        logo: withBasePath('/images/brands/asana-icon-circle.webp'),
         leader: 'David',
         team: [
           {
-            avatar: '/images/avatars/avatar-12.webp',
+            avatar: withBasePath('/images/avatars/avatar-12.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-13.webp',
+            avatar: withBasePath('/images/avatars/avatar-13.webp'),
             initials: 'JM'
           },
           {
@@ -1752,15 +1753,15 @@ export const users: AppUser[] = [
         id: 'proj-063',
         name: 'Dashboard Design',
         type: 'Angular Project',
-        logo: '/images/brands/dropbox-icon-circle.webp',
+        logo: withBasePath('/images/brands/dropbox-icon-circle.webp'),
         leader: 'Nina',
         team: [
           {
-            avatar: '/images/avatars/avatar-14.webp',
+            avatar: withBasePath('/images/avatars/avatar-14.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-15.webp',
+            avatar: withBasePath('/images/avatars/avatar-15.webp'),
             initials: 'JM'
           },
           {
@@ -1775,15 +1776,15 @@ export const users: AppUser[] = [
         id: 'proj-064',
         name: 'Foodista Mobile App',
         type: 'Node Project',
-        logo: '/images/brands/slack-icon.webp',
+        logo: withBasePath('/images/brands/slack-icon.webp'),
         leader: 'Alex',
         team: [
           {
-            avatar: '/images/avatars/avatar-16.webp',
+            avatar: withBasePath('/images/avatars/avatar-16.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-17.webp',
+            avatar: withBasePath('/images/avatars/avatar-17.webp'),
             initials: 'JM'
           },
           {
@@ -1798,15 +1799,15 @@ export const users: AppUser[] = [
         id: 'proj-065',
         name: 'BGC eCommerce App',
         type: 'React Project',
-        logo: '/images/brands/google-icon.webp',
+        logo: withBasePath('/images/brands/google-icon.webp'),
         leader: 'Eileen',
         team: [
           {
-            avatar: '/images/avatars/avatar-18.webp',
+            avatar: withBasePath('/images/avatars/avatar-18.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-19.webp',
+            avatar: withBasePath('/images/avatars/avatar-19.webp'),
             initials: 'JM'
           },
           {
@@ -1821,15 +1822,15 @@ export const users: AppUser[] = [
         id: 'proj-066',
         name: 'Tailwind CSS Kit',
         type: 'Figma Project',
-        logo: '/images/brands/figma-icon.webp',
+        logo: withBasePath('/images/brands/figma-icon.webp'),
         leader: 'James',
         team: [
           {
-            avatar: '/images/avatars/avatar-20.webp',
+            avatar: withBasePath('/images/avatars/avatar-20.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-1.webp',
+            avatar: withBasePath('/images/avatars/avatar-1.webp'),
             initials: 'JM'
           },
           {
@@ -1860,7 +1861,7 @@ export const users: AppUser[] = [
         person: {
           name: 'Lester McCarthy (Client)',
           role: 'CEO of Pixinvent',
-          avatar: '/images/avatars/avatar-2.webp',
+          avatar: withBasePath('/images/avatars/avatar-2.webp'),
           initials: 'LM'
         }
       },
@@ -1873,17 +1874,17 @@ export const users: AppUser[] = [
           {
             name: 'John Doe',
             initials: 'JD',
-            avatar: '/images/avatars/avatar-3.webp'
+            avatar: withBasePath('/images/avatars/avatar-3.webp')
           },
           {
             name: 'Anna Richard',
             initials: 'AR',
-            avatar: '/images/avatars/avatar-4.webp'
+            avatar: withBasePath('/images/avatars/avatar-4.webp')
           },
           {
             name: 'Bob Carter',
             initials: 'BC',
-            avatar: '/images/avatars/avatar-5.webp'
+            avatar: withBasePath('/images/avatars/avatar-5.webp')
           }
         ],
         teamExtraCount: 3
@@ -1961,7 +1962,7 @@ export const users: AppUser[] = [
     country: 'Japan',
     contact: '+1 (555) 207-1091',
     joinedDate: '2023-04-03T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-8.webp',
+    avatar: withBasePath('/images/avatars/avatar-8.webp'),
     socialLinks: [
       {
         platform: 'dribbble',
@@ -1983,15 +1984,15 @@ export const users: AppUser[] = [
         id: 'proj-071',
         name: 'Figma UI Kit',
         type: 'Vue Project',
-        logo: '/images/brands/notion-white.webp',
+        logo: withBasePath('/images/brands/notion-white.webp'),
         leader: 'David',
         team: [
           {
-            avatar: '/images/avatars/avatar-9.webp',
+            avatar: withBasePath('/images/avatars/avatar-9.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-10.webp',
+            avatar: withBasePath('/images/avatars/avatar-10.webp'),
             initials: 'JM'
           },
           {
@@ -2006,15 +2007,15 @@ export const users: AppUser[] = [
         id: 'proj-072',
         name: 'Dojo Email App',
         type: 'Angular Project',
-        logo: '/images/brands/asana-icon-circle.webp',
+        logo: withBasePath('/images/brands/asana-icon-circle.webp'),
         leader: 'Nina',
         team: [
           {
-            avatar: '/images/avatars/avatar-11.webp',
+            avatar: withBasePath('/images/avatars/avatar-11.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-12.webp',
+            avatar: withBasePath('/images/avatars/avatar-12.webp'),
             initials: 'JM'
           },
           {
@@ -2029,15 +2030,15 @@ export const users: AppUser[] = [
         id: 'proj-073',
         name: 'Falcon Logo Design',
         type: 'Node Project',
-        logo: '/images/brands/dropbox-icon-circle.webp',
+        logo: withBasePath('/images/brands/dropbox-icon-circle.webp'),
         leader: 'Alex',
         team: [
           {
-            avatar: '/images/avatars/avatar-13.webp',
+            avatar: withBasePath('/images/avatars/avatar-13.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-14.webp',
+            avatar: withBasePath('/images/avatars/avatar-14.webp'),
             initials: 'JM'
           },
           {
@@ -2052,15 +2053,15 @@ export const users: AppUser[] = [
         id: 'proj-074',
         name: 'Mobile Banking App',
         type: 'React Project',
-        logo: '/images/brands/slack-icon.webp',
+        logo: withBasePath('/images/brands/slack-icon.webp'),
         leader: 'Eileen',
         team: [
           {
-            avatar: '/images/avatars/avatar-15.webp',
+            avatar: withBasePath('/images/avatars/avatar-15.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-16.webp',
+            avatar: withBasePath('/images/avatars/avatar-16.webp'),
             initials: 'JM'
           },
           {
@@ -2075,15 +2076,15 @@ export const users: AppUser[] = [
         id: 'proj-075',
         name: 'Figma UI Kit',
         type: 'Figma Project',
-        logo: '/images/brands/google-icon.webp',
+        logo: withBasePath('/images/brands/google-icon.webp'),
         leader: 'James',
         team: [
           {
-            avatar: '/images/avatars/avatar-17.webp',
+            avatar: withBasePath('/images/avatars/avatar-17.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-18.webp',
+            avatar: withBasePath('/images/avatars/avatar-18.webp'),
             initials: 'JM'
           },
           {
@@ -2098,15 +2099,15 @@ export const users: AppUser[] = [
         id: 'proj-076',
         name: 'Dojo Email App',
         type: 'Vue Project',
-        logo: '/images/brands/figma-icon.webp',
+        logo: withBasePath('/images/brands/figma-icon.webp'),
         leader: 'Sarah',
         team: [
           {
-            avatar: '/images/avatars/avatar-19.webp',
+            avatar: withBasePath('/images/avatars/avatar-19.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-20.webp',
+            avatar: withBasePath('/images/avatars/avatar-20.webp'),
             initials: 'JM'
           },
           {
@@ -2121,15 +2122,15 @@ export const users: AppUser[] = [
         id: 'proj-077',
         name: 'Falcon Logo Design',
         type: 'Angular Project',
-        logo: '/images/brands/notion-white.webp',
+        logo: withBasePath('/images/brands/notion-white.webp'),
         leader: 'Marcus',
         team: [
           {
-            avatar: '/images/avatars/avatar-1.webp',
+            avatar: withBasePath('/images/avatars/avatar-1.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-2.webp',
+            avatar: withBasePath('/images/avatars/avatar-2.webp'),
             initials: 'JM'
           },
           {
@@ -2160,7 +2161,7 @@ export const users: AppUser[] = [
         person: {
           name: 'Lester McCarthy (Client)',
           role: 'CEO of Pixinvent',
-          avatar: '/images/avatars/avatar-3.webp',
+          avatar: withBasePath('/images/avatars/avatar-3.webp'),
           initials: 'LM'
         }
       },
@@ -2173,17 +2174,17 @@ export const users: AppUser[] = [
           {
             name: 'John Doe',
             initials: 'JD',
-            avatar: '/images/avatars/avatar-4.webp'
+            avatar: withBasePath('/images/avatars/avatar-4.webp')
           },
           {
             name: 'Anna Richard',
             initials: 'AR',
-            avatar: '/images/avatars/avatar-5.webp'
+            avatar: withBasePath('/images/avatars/avatar-5.webp')
           },
           {
             name: 'Bob Carter',
             initials: 'BC',
-            avatar: '/images/avatars/avatar-6.webp'
+            avatar: withBasePath('/images/avatars/avatar-6.webp')
           }
         ],
         teamExtraCount: 3
@@ -2269,7 +2270,7 @@ export const users: AppUser[] = [
     country: 'Brazil',
     contact: '+1 (555) 208-1104',
     joinedDate: '2023-06-17T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-9.webp',
+    avatar: withBasePath('/images/avatars/avatar-9.webp'),
     socialLinks: [
       {
         platform: 'twitter',
@@ -2291,15 +2292,15 @@ export const users: AppUser[] = [
         id: 'proj-081',
         name: 'BGC eCommerce App',
         type: 'Angular Project',
-        logo: '/images/brands/asana-icon-circle.webp',
+        logo: withBasePath('/images/brands/asana-icon-circle.webp'),
         leader: 'Nina',
         team: [
           {
-            avatar: '/images/avatars/avatar-11.webp',
+            avatar: withBasePath('/images/avatars/avatar-11.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-12.webp',
+            avatar: withBasePath('/images/avatars/avatar-12.webp'),
             initials: 'JM'
           },
           {
@@ -2314,15 +2315,15 @@ export const users: AppUser[] = [
         id: 'proj-082',
         name: 'Dashboard Design',
         type: 'Node Project',
-        logo: '/images/brands/dropbox-icon-circle.webp',
+        logo: withBasePath('/images/brands/dropbox-icon-circle.webp'),
         leader: 'Alex',
         team: [
           {
-            avatar: '/images/avatars/avatar-13.webp',
+            avatar: withBasePath('/images/avatars/avatar-13.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-14.webp',
+            avatar: withBasePath('/images/avatars/avatar-14.webp'),
             initials: 'JM'
           },
           {
@@ -2337,15 +2338,15 @@ export const users: AppUser[] = [
         id: 'proj-083',
         name: 'Tailwind CSS Kit',
         type: 'React Project',
-        logo: '/images/brands/slack-icon.webp',
+        logo: withBasePath('/images/brands/slack-icon.webp'),
         leader: 'Eileen',
         team: [
           {
-            avatar: '/images/avatars/avatar-15.webp',
+            avatar: withBasePath('/images/avatars/avatar-15.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-16.webp',
+            avatar: withBasePath('/images/avatars/avatar-16.webp'),
             initials: 'JM'
           },
           {
@@ -2360,15 +2361,15 @@ export const users: AppUser[] = [
         id: 'proj-084',
         name: 'Admin Template Pro',
         type: 'Figma Project',
-        logo: '/images/brands/google-icon.webp',
+        logo: withBasePath('/images/brands/google-icon.webp'),
         leader: 'James',
         team: [
           {
-            avatar: '/images/avatars/avatar-17.webp',
+            avatar: withBasePath('/images/avatars/avatar-17.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-18.webp',
+            avatar: withBasePath('/images/avatars/avatar-18.webp'),
             initials: 'JM'
           },
           {
@@ -2399,7 +2400,7 @@ export const users: AppUser[] = [
         person: {
           name: 'Lester McCarthy (Client)',
           role: 'CEO of Pixinvent',
-          avatar: '/images/avatars/avatar-19.webp',
+          avatar: withBasePath('/images/avatars/avatar-19.webp'),
           initials: 'LM'
         }
       },
@@ -2412,17 +2413,17 @@ export const users: AppUser[] = [
           {
             name: 'John Doe',
             initials: 'JD',
-            avatar: '/images/avatars/avatar-20.webp'
+            avatar: withBasePath('/images/avatars/avatar-20.webp')
           },
           {
             name: 'Anna Richard',
             initials: 'AR',
-            avatar: '/images/avatars/avatar-1.webp'
+            avatar: withBasePath('/images/avatars/avatar-1.webp')
           },
           {
             name: 'Bob Carter',
             initials: 'BC',
-            avatar: '/images/avatars/avatar-2.webp'
+            avatar: withBasePath('/images/avatars/avatar-2.webp')
           }
         ],
         teamExtraCount: 3
@@ -2514,7 +2515,7 @@ export const users: AppUser[] = [
     country: 'Netherlands',
     contact: '+1 (555) 209-1117',
     joinedDate: '2023-08-29T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-10.webp',
+    avatar: withBasePath('/images/avatars/avatar-10.webp'),
     socialLinks: [
       {
         platform: 'github',
@@ -2540,15 +2541,15 @@ export const users: AppUser[] = [
         id: 'proj-091',
         name: 'Admin Template Pro',
         type: 'Node Project',
-        logo: '/images/brands/figma-icon.webp',
+        logo: withBasePath('/images/brands/figma-icon.webp'),
         leader: 'Alex',
         team: [
           {
-            avatar: '/images/avatars/avatar-7.webp',
+            avatar: withBasePath('/images/avatars/avatar-7.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-8.webp',
+            avatar: withBasePath('/images/avatars/avatar-8.webp'),
             initials: 'JM'
           },
           {
@@ -2563,15 +2564,15 @@ export const users: AppUser[] = [
         id: 'proj-092',
         name: 'Mobile Banking App',
         type: 'React Project',
-        logo: '/images/brands/notion-white.webp',
+        logo: withBasePath('/images/brands/notion-white.webp'),
         leader: 'Eileen',
         team: [
           {
-            avatar: '/images/avatars/avatar-9.webp',
+            avatar: withBasePath('/images/avatars/avatar-9.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-10.webp',
+            avatar: withBasePath('/images/avatars/avatar-10.webp'),
             initials: 'JM'
           },
           {
@@ -2586,15 +2587,15 @@ export const users: AppUser[] = [
         id: 'proj-093',
         name: 'Falcon Logo Design',
         type: 'Figma Project',
-        logo: '/images/brands/asana-icon-circle.webp',
+        logo: withBasePath('/images/brands/asana-icon-circle.webp'),
         leader: 'James',
         team: [
           {
-            avatar: '/images/avatars/avatar-11.webp',
+            avatar: withBasePath('/images/avatars/avatar-11.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-12.webp',
+            avatar: withBasePath('/images/avatars/avatar-12.webp'),
             initials: 'JM'
           },
           {
@@ -2609,15 +2610,15 @@ export const users: AppUser[] = [
         id: 'proj-094',
         name: 'BGC eCommerce App',
         type: 'Vue Project',
-        logo: '/images/brands/dropbox-icon-circle.webp',
+        logo: withBasePath('/images/brands/dropbox-icon-circle.webp'),
         leader: 'Sarah',
         team: [
           {
-            avatar: '/images/avatars/avatar-13.webp',
+            avatar: withBasePath('/images/avatars/avatar-13.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-14.webp',
+            avatar: withBasePath('/images/avatars/avatar-14.webp'),
             initials: 'JM'
           },
           {
@@ -2632,15 +2633,15 @@ export const users: AppUser[] = [
         id: 'proj-095',
         name: 'Dashboard Design',
         type: 'Angular Project',
-        logo: '/images/brands/slack-icon.webp',
+        logo: withBasePath('/images/brands/slack-icon.webp'),
         leader: 'Marcus',
         team: [
           {
-            avatar: '/images/avatars/avatar-15.webp',
+            avatar: withBasePath('/images/avatars/avatar-15.webp'),
             initials: 'ET'
           },
           {
-            avatar: '/images/avatars/avatar-16.webp',
+            avatar: withBasePath('/images/avatars/avatar-16.webp'),
             initials: 'JM'
           },
           {
@@ -2671,7 +2672,7 @@ export const users: AppUser[] = [
         person: {
           name: 'Lester McCarthy (Client)',
           role: 'CEO of Pixinvent',
-          avatar: '/images/avatars/avatar-17.webp',
+          avatar: withBasePath('/images/avatars/avatar-17.webp'),
           initials: 'LM'
         }
       },
@@ -2684,17 +2685,17 @@ export const users: AppUser[] = [
           {
             name: 'John Doe',
             initials: 'JD',
-            avatar: '/images/avatars/avatar-18.webp'
+            avatar: withBasePath('/images/avatars/avatar-18.webp')
           },
           {
             name: 'Anna Richard',
             initials: 'AR',
-            avatar: '/images/avatars/avatar-19.webp'
+            avatar: withBasePath('/images/avatars/avatar-19.webp')
           },
           {
             name: 'Bob Carter',
             initials: 'BC',
-            avatar: '/images/avatars/avatar-20.webp'
+            avatar: withBasePath('/images/avatars/avatar-20.webp')
           }
         ],
         teamExtraCount: 3
@@ -2773,7 +2774,7 @@ export const users: AppUser[] = [
     country: 'Sweden',
     contact: '+1 (555) 210-1130',
     joinedDate: '2023-10-11T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-11.webp'
+    avatar: withBasePath('/images/avatars/avatar-11.webp')
   },
   {
     id: 'user-012',
@@ -2787,7 +2788,7 @@ export const users: AppUser[] = [
     country: 'Spain',
     contact: '+1 (555) 211-1143',
     joinedDate: '2023-12-05T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-12.webp'
+    avatar: withBasePath('/images/avatars/avatar-12.webp')
   },
   {
     id: 'user-013',
@@ -2801,7 +2802,7 @@ export const users: AppUser[] = [
     country: 'Italy',
     contact: '+1 (555) 212-1156',
     joinedDate: '2024-02-18T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-13.webp'
+    avatar: withBasePath('/images/avatars/avatar-13.webp')
   },
   {
     id: 'user-014',
@@ -2815,7 +2816,7 @@ export const users: AppUser[] = [
     country: 'Mexico',
     contact: '+1 (555) 213-1169',
     joinedDate: '2024-04-27T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-14.webp'
+    avatar: withBasePath('/images/avatars/avatar-14.webp')
   },
   {
     id: 'user-015',
@@ -2829,7 +2830,7 @@ export const users: AppUser[] = [
     country: 'Singapore',
     contact: '+1 (555) 214-1182',
     joinedDate: '2024-06-09T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-15.webp'
+    avatar: withBasePath('/images/avatars/avatar-15.webp')
   },
   {
     id: 'user-016',
@@ -2843,7 +2844,7 @@ export const users: AppUser[] = [
     country: 'South Korea',
     contact: '+1 (555) 215-1195',
     joinedDate: '2024-08-21T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-16.webp'
+    avatar: withBasePath('/images/avatars/avatar-16.webp')
   },
   {
     id: 'user-017',
@@ -2857,7 +2858,7 @@ export const users: AppUser[] = [
     country: 'Ireland',
     contact: '+1 (555) 216-1208',
     joinedDate: '2024-10-02T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-17.webp'
+    avatar: withBasePath('/images/avatars/avatar-17.webp')
   },
   {
     id: 'user-018',
@@ -2871,7 +2872,7 @@ export const users: AppUser[] = [
     country: 'New Zealand',
     contact: '+1 (555) 217-1221',
     joinedDate: '2024-12-16T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-18.webp'
+    avatar: withBasePath('/images/avatars/avatar-18.webp')
   },
   {
     id: 'user-019',
@@ -2885,7 +2886,7 @@ export const users: AppUser[] = [
     country: 'Switzerland',
     contact: '+1 (555) 218-1234',
     joinedDate: '2025-01-08T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-19.webp'
+    avatar: withBasePath('/images/avatars/avatar-19.webp')
   },
   {
     id: 'user-020',
@@ -2899,7 +2900,7 @@ export const users: AppUser[] = [
     country: 'Belgium',
     contact: '+1 (555) 219-1247',
     joinedDate: '2025-02-14T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-20.webp'
+    avatar: withBasePath('/images/avatars/avatar-20.webp')
   },
   {
     id: 'user-021',
@@ -2913,7 +2914,7 @@ export const users: AppUser[] = [
     country: 'Norway',
     contact: '+1 (555) 220-1260',
     joinedDate: '2025-03-01T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-1.webp'
+    avatar: withBasePath('/images/avatars/avatar-1.webp')
   },
   {
     id: 'user-022',
@@ -2927,7 +2928,7 @@ export const users: AppUser[] = [
     country: 'Denmark',
     contact: '+1 (555) 221-1273',
     joinedDate: '2022-02-20T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-2.webp'
+    avatar: withBasePath('/images/avatars/avatar-2.webp')
   },
   {
     id: 'user-023',
@@ -2941,7 +2942,7 @@ export const users: AppUser[] = [
     country: 'Finland',
     contact: '+1 (555) 222-1286',
     joinedDate: '2022-04-15T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-3.webp'
+    avatar: withBasePath('/images/avatars/avatar-3.webp')
   },
   {
     id: 'user-024',
@@ -2955,7 +2956,7 @@ export const users: AppUser[] = [
     country: 'Portugal',
     contact: '+1 (555) 223-1299',
     joinedDate: '2022-06-28T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-4.webp'
+    avatar: withBasePath('/images/avatars/avatar-4.webp')
   },
   {
     id: 'user-025',
@@ -2969,7 +2970,7 @@ export const users: AppUser[] = [
     country: 'Austria',
     contact: '+1 (555) 224-1312',
     joinedDate: '2022-08-07T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-5.webp'
+    avatar: withBasePath('/images/avatars/avatar-5.webp')
   },
   {
     id: 'user-026',
@@ -2983,7 +2984,7 @@ export const users: AppUser[] = [
     country: 'Poland',
     contact: '+1 (555) 225-1325',
     joinedDate: '2022-10-24T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-6.webp'
+    avatar: withBasePath('/images/avatars/avatar-6.webp')
   },
   {
     id: 'user-027',
@@ -2997,7 +2998,7 @@ export const users: AppUser[] = [
     country: 'Argentina',
     contact: '+1 (555) 226-1338',
     joinedDate: '2022-12-31T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-7.webp'
+    avatar: withBasePath('/images/avatars/avatar-7.webp')
   },
   {
     id: 'user-028',
@@ -3011,7 +3012,7 @@ export const users: AppUser[] = [
     country: 'Chile',
     contact: '+1 (555) 227-1351',
     joinedDate: '2023-02-09T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-8.webp'
+    avatar: withBasePath('/images/avatars/avatar-8.webp')
   },
   {
     id: 'user-029',
@@ -3025,7 +3026,7 @@ export const users: AppUser[] = [
     country: 'South Africa',
     contact: '+1 (555) 228-1364',
     joinedDate: '2023-05-16T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-9.webp'
+    avatar: withBasePath('/images/avatars/avatar-9.webp')
   },
   {
     id: 'user-030',
@@ -3039,7 +3040,7 @@ export const users: AppUser[] = [
     country: 'UAE',
     contact: '+1 (555) 229-1377',
     joinedDate: '2023-07-23T00:00:00.000Z',
-    avatar: '/images/avatars/avatar-10.webp'
+    avatar: withBasePath('/images/avatars/avatar-10.webp')
   },
   {
     id: 'user-031',

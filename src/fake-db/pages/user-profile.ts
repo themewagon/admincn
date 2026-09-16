@@ -1,4 +1,5 @@
 import type { UserProfilePageData } from '@/types/pages/user-profile-types'
+import { withBasePath } from '@/lib/with-base-path'
 
 export const db: UserProfilePageData = {
   // About Section - Profile Section Data
@@ -61,7 +62,7 @@ export const db: UserProfilePageData = {
         name: 'Lester McCarthy (Client)',
         initials: 'LM',
         role: 'CEO of ThemeSelection',
-        avatar: '/images/avatars/avatar-3.webp'
+        avatar: withBasePath('/images/avatars/avatar-3.webp')
       }
     },
     {
@@ -73,17 +74,17 @@ export const db: UserProfilePageData = {
         {
           name: 'Alex Carter',
           initials: 'AC',
-          avatar: '/images/avatars/avatar-1.webp'
+          avatar: withBasePath('/images/avatars/avatar-1.webp')
         },
         {
           name: 'Mia Stewart',
           initials: 'MS',
-          avatar: '/images/avatars/avatar-2.webp'
+          avatar: withBasePath('/images/avatars/avatar-2.webp')
         },
         {
           name: 'Noah Wilson',
           initials: 'NW',
-          avatar: '/images/avatars/avatar-4.webp'
+          avatar: withBasePath('/images/avatars/avatar-4.webp')
         }
       ],
       teamExtraCount: 3
@@ -96,12 +97,12 @@ export const db: UserProfilePageData = {
       id: 'upp-001',
       name: 'Atlas CRM Revamp',
       type: 'Figma Project',
-      logo: '/images/brands/figma-icon.webp',
-      logoDark: '/images/brands/figma-icon.webp',
+      logo: withBasePath('/images/brands/figma-icon.webp'),
+      logoDark: withBasePath('/images/brands/figma-icon.webp'),
       leader: 'Olivia Reed',
       team: [
-        { avatar: '/images/avatars/avatar-1.webp', initials: 'OR' },
-        { avatar: '/images/avatars/avatar-3.webp', initials: 'JD' }
+        { avatar: withBasePath('/images/avatars/avatar-1.webp'), initials: 'OR' },
+        { avatar: withBasePath('/images/avatars/avatar-3.webp'), initials: 'JD' }
       ],
       teamExtraCount: 2,
       progress: 82,
@@ -111,12 +112,12 @@ export const db: UserProfilePageData = {
       id: 'upp-002',
       name: 'Nimbus Analytics Portal',
       type: 'Next Project',
-      logo: '/images/brands/next-logo.webp',
-      logoDark: '/images/brands/next-logo-dark.webp',
+      logo: withBasePath('/images/brands/next-logo.webp'),
+      logoDark: withBasePath('/images/brands/next-logo-dark.webp'),
       leader: 'Liam Cooper',
       team: [
-        { avatar: '/images/avatars/avatar-2.webp', initials: 'LC' },
-        { avatar: '/images/avatars/avatar-4.webp', initials: 'MP' }
+        { avatar: withBasePath('/images/avatars/avatar-2.webp'), initials: 'LC' },
+        { avatar: withBasePath('/images/avatars/avatar-4.webp'), initials: 'MP' }
       ],
       teamExtraCount: 1,
       progress: 64,
@@ -126,10 +127,10 @@ export const db: UserProfilePageData = {
       id: 'upp-003',
       name: 'Shadcn UI Admin Dashboard',
       type: 'Shadcn Project',
-      logo: '/images/brands/shadcn-logo.webp',
-      logoDark: '/images/brands/shadcn-logo.webp',
+      logo: withBasePath('/images/brands/shadcn-logo.webp'),
+      logoDark: withBasePath('/images/brands/shadcn-logo.webp'),
       leader: 'Sophia Patel',
-      team: [{ avatar: '/images/avatars/avatar-5.webp', initials: 'SP' }, { initials: 'AL' }],
+      team: [{ avatar: withBasePath('/images/avatars/avatar-5.webp'), initials: 'SP' }, { initials: 'AL' }],
       teamExtraCount: 3,
       progress: 47,
       updatedAt: 'Updated 1 day ago'
@@ -138,12 +139,12 @@ export const db: UserProfilePageData = {
       id: 'upp-004',
       name: 'Vertex System',
       type: 'Laravel Project',
-      logo: '/images/brands/laravel-logo.webp',
-      logoDark: '/images/brands/laravel-logo.webp',
+      logo: withBasePath('/images/brands/laravel-logo.webp'),
+      logoDark: withBasePath('/images/brands/laravel-logo.webp'),
       leader: 'Noah Bennett',
       team: [
-        { avatar: '/images/avatars/avatar-7.webp', initials: 'NB' },
-        { avatar: '/images/avatars/avatar-8.webp', initials: 'EA' },
+        { avatar: withBasePath('/images/avatars/avatar-7.webp'), initials: 'NB' },
+        { avatar: withBasePath('/images/avatars/avatar-8.webp'), initials: 'EA' },
         { initials: 'RB' }
       ],
       teamExtraCount: 2,
@@ -154,12 +155,12 @@ export const db: UserProfilePageData = {
       id: 'upp-005',
       name: 'Pulse API Gateway',
       type: 'MCP Project',
-      logo: '/images/brands/mcp-icon.webp',
-      logoDark: '/images/brands/mcp-icon-dark.webp',
+      logo: withBasePath('/images/brands/mcp-icon.webp'),
+      logoDark: withBasePath('/images/brands/mcp-icon-dark.webp'),
       leader: 'Ava Collins',
       team: [
-        { avatar: '/images/avatars/avatar-9.webp', initials: 'AC' },
-        { avatar: '/images/avatars/avatar-10.webp', initials: 'DN' }
+        { avatar: withBasePath('/images/avatars/avatar-9.webp'), initials: 'AC' },
+        { avatar: withBasePath('/images/avatars/avatar-10.webp'), initials: 'DN' }
       ],
       teamExtraCount: 1,
       progress: 58,
@@ -169,12 +170,12 @@ export const db: UserProfilePageData = {
       id: 'upp-006',
       name: 'eCommerce Website',
       type: 'React Project',
-      logo: '/images/brands/react-logo.webp',
-      logoDark: '/images/brands/react-logo.webp',
+      logo: withBasePath('/images/brands/react-logo.webp'),
+      logoDark: withBasePath('/images/brands/react-logo.webp'),
       leader: 'Ethan Miles',
       team: [
-        { avatar: '/images/avatars/avatar-11.webp', initials: 'EM' },
-        { avatar: '/images/avatars/avatar-12.webp', initials: 'HS' }
+        { avatar: withBasePath('/images/avatars/avatar-11.webp'), initials: 'EM' },
+        { avatar: withBasePath('/images/avatars/avatar-12.webp'), initials: 'HS' }
       ],
       teamExtraCount: 4,
       progress: 36,
@@ -184,12 +185,12 @@ export const db: UserProfilePageData = {
       id: 'upp-007',
       name: 'Mercury Billing Engine',
       type: 'MCP Project',
-      logo: '/images/brands/mcp-icon.webp',
-      logoDark: '/images/brands/mcp-icon-dark.webp',
+      logo: withBasePath('/images/brands/mcp-icon.webp'),
+      logoDark: withBasePath('/images/brands/mcp-icon-dark.webp'),
       leader: 'Mia Turner',
       team: [
-        { avatar: '/images/avatars/avatar-1.webp', initials: 'MT' },
-        { avatar: '/images/avatars/avatar-6.webp', initials: 'CK' },
+        { avatar: withBasePath('/images/avatars/avatar-1.webp'), initials: 'MT' },
+        { avatar: withBasePath('/images/avatars/avatar-6.webp'), initials: 'CK' },
         { initials: 'FG' }
       ],
       teamExtraCount: 0,
@@ -200,12 +201,12 @@ export const db: UserProfilePageData = {
       id: 'upp-008',
       name: 'Quasar Support Desk',
       type: 'Next Project',
-      logo: '/images/brands/next-logo.webp',
-      logoDark: '/images/brands/next-logo-dark.webp',
+      logo: withBasePath('/images/brands/next-logo.webp'),
+      logoDark: withBasePath('/images/brands/next-logo-dark.webp'),
       leader: 'Jacob Lee',
       team: [
-        { avatar: '/images/avatars/avatar-3.webp', initials: 'JL' },
-        { avatar: '/images/avatars/avatar-8.webp', initials: 'RW' },
+        { avatar: withBasePath('/images/avatars/avatar-3.webp'), initials: 'JL' },
+        { avatar: withBasePath('/images/avatars/avatar-8.webp'), initials: 'RW' },
         { initials: 'NH' }
       ],
       teamExtraCount: 0,
@@ -216,12 +217,12 @@ export const db: UserProfilePageData = {
       id: 'upp-009',
       name: 'Beacon Knowledge Base',
       type: 'Nuxt Project',
-      logo: '/images/brands/github-icon.webp',
-      logoDark: '/images/brands/github-white.webp',
+      logo: withBasePath('/images/brands/github-icon.webp'),
+      logoDark: withBasePath('/images/brands/github-white.webp'),
       leader: 'Isabella Gray',
       team: [
-        { avatar: '/images/avatars/avatar-4.webp', initials: 'IG' },
-        { avatar: '/images/avatars/avatar-9.webp', initials: 'PS' }
+        { avatar: withBasePath('/images/avatars/avatar-4.webp'), initials: 'IG' },
+        { avatar: withBasePath('/images/avatars/avatar-9.webp'), initials: 'PS' }
       ],
       teamExtraCount: 3,
       progress: 54,
@@ -231,12 +232,12 @@ export const db: UserProfilePageData = {
       id: 'upp-010',
       name: 'Figma Design System',
       type: 'UI Project',
-      logo: '/images/brands/figma-icon.webp',
-      logoDark: '/images/brands/figma-icon.webp',
+      logo: withBasePath('/images/brands/figma-icon.webp'),
+      logoDark: withBasePath('/images/brands/figma-icon.webp'),
       leader: 'Henry Foster',
       team: [
-        { avatar: '/images/avatars/avatar-2.webp', initials: 'HF' },
-        { avatar: '/images/avatars/avatar-5.webp', initials: 'KT' },
+        { avatar: withBasePath('/images/avatars/avatar-2.webp'), initials: 'HF' },
+        { avatar: withBasePath('/images/avatars/avatar-5.webp'), initials: 'KT' },
         { initials: 'UE' }
       ],
       teamExtraCount: 2,
@@ -252,7 +253,7 @@ export const db: UserProfilePageData = {
       id: 1,
       name: 'Cecilia Payne',
       initials: 'CP',
-      avatar: '/images/avatars/avatar-1.webp',
+      avatar: withBasePath('/images/avatars/avatar-1.webp'),
       totalConnections: '45 Connections',
       isConnected: false
     },
@@ -260,7 +261,7 @@ export const db: UserProfilePageData = {
       id: 2,
       name: 'Curtis Fletcher',
       initials: 'CF',
-      avatar: '/images/avatars/avatar-2.webp',
+      avatar: withBasePath('/images/avatars/avatar-2.webp'),
       totalConnections: '1.32k Connections',
       isConnected: true
     },
@@ -268,7 +269,7 @@ export const db: UserProfilePageData = {
       id: 3,
       name: 'Alice Stone',
       initials: 'AS',
-      avatar: '/images/avatars/avatar-3.webp',
+      avatar: withBasePath('/images/avatars/avatar-3.webp'),
       totalConnections: '125 Connections',
       isConnected: true
     },
@@ -276,7 +277,7 @@ export const db: UserProfilePageData = {
       id: 4,
       name: 'Darrell Barnes',
       initials: 'DB',
-      avatar: '/images/avatars/avatar-4.webp',
+      avatar: withBasePath('/images/avatars/avatar-4.webp'),
       totalConnections: '456 Connections',
       isConnected: false
     },
@@ -284,7 +285,7 @@ export const db: UserProfilePageData = {
       id: 5,
       name: 'Eugenia Moore',
       initials: 'EM',
-      avatar: '/images/avatars/avatar-5.webp',
+      avatar: withBasePath('/images/avatars/avatar-5.webp'),
       totalConnections: '1.2k Connections',
       isConnected: false
     }
@@ -298,7 +299,7 @@ export const db: UserProfilePageData = {
       name: 'Mark Gilbert',
       role: 'UI Designer',
       initials: 'MG',
-      avatar: '/images/avatars/avatar-1.webp',
+      avatar: withBasePath('/images/avatars/avatar-1.webp'),
       tags: [{ label: 'Figma' }, { label: 'Sketch' }],
       stats: {
         projects: '18',
@@ -313,7 +314,7 @@ export const db: UserProfilePageData = {
       name: 'Eugenia Parsons',
       role: 'Developer',
       initials: 'EP',
-      avatar: '/images/avatars/avatar-2.webp',
+      avatar: withBasePath('/images/avatars/avatar-2.webp'),
       tags: [{ label: 'Angular' }, { label: 'React' }],
       stats: {
         projects: '112',
@@ -328,7 +329,7 @@ export const db: UserProfilePageData = {
       name: 'Francis Byrd',
       role: 'Developer',
       initials: 'FB',
-      avatar: '/images/avatars/avatar-3.webp',
+      avatar: withBasePath('/images/avatars/avatar-3.webp'),
       tags: [{ label: 'HTML' }, { label: 'React' }],
       stats: {
         projects: '32',
@@ -343,7 +344,7 @@ export const db: UserProfilePageData = {
       name: 'Leon Lucas',
       role: 'UI/UX Designer',
       initials: 'LL',
-      avatar: '/images/avatars/avatar-4.webp',
+      avatar: withBasePath('/images/avatars/avatar-4.webp'),
       tags: [{ label: 'Figma' }, { label: 'Sketch' }, { label: 'Photoshop' }],
       stats: {
         projects: '86',
@@ -358,7 +359,7 @@ export const db: UserProfilePageData = {
       name: 'Jayden Rogers',
       role: 'Full Stack Developer',
       initials: 'JR',
-      avatar: '/images/avatars/avatar-5.webp',
+      avatar: withBasePath('/images/avatars/avatar-5.webp'),
       tags: [{ label: 'React' }, { label: 'HTML' }, { label: 'Node.js' }],
       stats: {
         projects: '244',
@@ -373,7 +374,7 @@ export const db: UserProfilePageData = {
       name: 'Jeanette Powell',
       role: 'SEO',
       initials: 'JP',
-      avatar: '/images/avatars/avatar-6.webp',
+      avatar: withBasePath('/images/avatars/avatar-6.webp'),
       tags: [{ label: 'Analysis' }, { label: 'Writing' }],
       stats: {
         projects: '32',
@@ -392,7 +393,7 @@ export const db: UserProfilePageData = {
       id: 1,
       teams: 'React Developers',
       initials: 'RD',
-      avatar: '/images/avatars/avatar-1.webp',
+      avatar: withBasePath('/images/avatars/avatar-1.webp'),
       totalMembers: '72 Members',
       teamBadge: {
         label: 'Developer'
@@ -402,7 +403,7 @@ export const db: UserProfilePageData = {
       id: 2,
       teams: 'Vue Developers',
       initials: 'VD',
-      avatar: '/images/avatars/avatar-2.webp',
+      avatar: withBasePath('/images/avatars/avatar-2.webp'),
       totalMembers: '58 Members',
       teamBadge: {
         label: 'Developer'
@@ -412,7 +413,7 @@ export const db: UserProfilePageData = {
       id: 3,
       teams: 'Angular Developers',
       initials: 'AD',
-      avatar: '/images/avatars/avatar-3.webp',
+      avatar: withBasePath('/images/avatars/avatar-3.webp'),
       totalMembers: '65 Members',
       teamBadge: {
         label: 'Developer'
@@ -422,7 +423,7 @@ export const db: UserProfilePageData = {
       id: 4,
       teams: 'UI Designers',
       initials: 'UD',
-      avatar: '/images/avatars/avatar-4.webp',
+      avatar: withBasePath('/images/avatars/avatar-4.webp'),
       totalMembers: '72 Members',
       teamBadge: {
         label: 'Designer'
@@ -432,7 +433,7 @@ export const db: UserProfilePageData = {
       id: 5,
       teams: 'Digital Marketing',
       initials: 'DM',
-      avatar: '/images/avatars/avatar-2.webp',
+      avatar: withBasePath('/images/avatars/avatar-2.webp'),
       totalMembers: '58 Members',
       teamBadge: {
         label: 'Marketing'

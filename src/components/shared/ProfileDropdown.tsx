@@ -16,11 +16,12 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
+import { withBasePath } from '@/lib/with-base-path'
 
 const STATIC_USER = {
   fullName: 'John Doe',
   email: 'john.doe@example.com',
-  imageUrl: '/images/avatars/avatar-1.webp',
+  imageUrl: withBasePath('/images/avatars/avatar-1.webp'),
   initials: 'JD'
 }
 

@@ -21,6 +21,7 @@ import { Switch } from '@/components/ui/switch'
 
 // Util Imports
 import { cn } from '@/lib/utils'
+import { withBasePath } from '@/lib/with-base-path'
 
 interface BrandItem {
   image?: string
@@ -53,35 +54,35 @@ const CONNECTED_INTEGRATIONS: ConnectedIntegration[] = [
     id: 'google',
     name: 'Google',
     description: 'Calendar and contacts',
-    image: '/images/brands/google-icon.webp',
+    image: withBasePath('/images/brands/google-icon.webp'),
     enabled: true
   },
   {
     id: 'slack',
     name: 'Slack',
     description: 'Communication',
-    image: '/images/brands/slack-icon.webp',
+    image: withBasePath('/images/brands/slack-icon.webp'),
     enabled: false
   },
   {
     id: 'github',
     name: 'Github',
     description: 'Manage your Git repository',
-    image: '/images/brands/github-white.webp',
+    image: withBasePath('/images/brands/github-white.webp'),
     enabled: true
   },
   {
     id: 'mailchimp',
     name: 'Mailchimp',
     description: 'Email marketing service',
-    image: '/images/brands/mailchimp-icon.webp',
+    image: withBasePath('/images/brands/mailchimp-icon.webp'),
     enabled: false
   },
   {
     id: 'asana',
     name: 'Asana',
     description: 'Communication',
-    image: '/images/brands/asana-icon-circle.webp',
+    image: withBasePath('/images/brands/asana-icon-circle.webp'),
     enabled: false
   }
 ]

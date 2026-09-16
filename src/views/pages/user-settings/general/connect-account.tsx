@@ -19,6 +19,7 @@ import {
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { withBasePath } from '@/lib/with-base-path'
 
 interface ConnectedAccount {
   id: string
@@ -30,12 +31,12 @@ const initialAccounts: ConnectedAccount[] = [
   {
     id: 'google',
     name: 'Google',
-    iconUrl: '/images/brands/google-icon.webp'
+    iconUrl: withBasePath('/images/brands/google-icon.webp')
   },
   {
     id: 'slack',
     name: 'Slack',
-    iconUrl: '/images/brands/slack-icon.webp'
+    iconUrl: withBasePath('/images/brands/slack-icon.webp')
   }
 ]
 

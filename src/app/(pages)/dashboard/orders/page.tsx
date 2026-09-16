@@ -7,6 +7,7 @@ import SalesMetricsCard from '@/views/dashboards/charts/chart-sales-metrics'
 import StatisticsCard from '@/views/dashboards/statistics/statistics-card-01'
 import TotalEarningCard from '@/views/dashboards/widgets/widget-total-earning'
 import TransactionDatatable, { type Item } from '@/views/datatables/datatable-transaction'
+import { withBasePath } from '@/lib/with-base-path'
 
 // Statistics card data
 const StatisticsCardData = [
@@ -33,14 +34,14 @@ const StatisticsCardData = [
 // Earning data for Total Earning card
 const earningData = [
   {
-    img: '/images/widgets/zipcar.webp',
+    img: withBasePath('/images/widgets/zipcar.webp'),
     platform: 'Zipcar',
     technologies: 'Vuejs & HTML',
     earnings: '-$23,569.26',
     progressPercentage: 75
   },
   {
-    img: '/images/widgets/bitbank.webp',
+    img: withBasePath('/images/widgets/bitbank.webp'),
     platform: 'Bitbank',
     technologies: 'Figma & React',
     earnings: '-$12,650.31',
@@ -52,7 +53,7 @@ const earningData = [
 const transactionData: Item[] = [
   {
     id: '1',
-    avatar: '/images/avatars/avatar-1.webp',
+    avatar: withBasePath('/images/avatars/avatar-1.webp'),
     avatarFallback: 'JA',
     name: 'Jack Alfredo',
     amount: 316.0,
@@ -62,7 +63,7 @@ const transactionData: Item[] = [
   },
   {
     id: '2',
-    avatar: '/images/avatars/avatar-2.webp',
+    avatar: withBasePath('/images/avatars/avatar-2.webp'),
     avatarFallback: 'MG',
     name: 'Maria Gonzalez',
     amount: 253.4,
@@ -72,7 +73,7 @@ const transactionData: Item[] = [
   },
   {
     id: '3',
-    avatar: '/images/avatars/avatar-3.webp',
+    avatar: withBasePath('/images/avatars/avatar-3.webp'),
     avatarFallback: 'JD',
     name: 'John Doe',
     amount: 852.0,
@@ -82,7 +83,7 @@ const transactionData: Item[] = [
   },
   {
     id: '4',
-    avatar: '/images/avatars/avatar-4.webp',
+    avatar: withBasePath('/images/avatars/avatar-4.webp'),
     avatarFallback: 'EC',
     name: 'Emily Carter',
     amount: 889.0,
@@ -92,7 +93,7 @@ const transactionData: Item[] = [
   },
   {
     id: '5',
-    avatar: '/images/avatars/avatar-5.webp',
+    avatar: withBasePath('/images/avatars/avatar-5.webp'),
     avatarFallback: 'DL',
     name: 'David Lee',
     amount: 723.16,
@@ -102,7 +103,7 @@ const transactionData: Item[] = [
   },
   {
     id: '6',
-    avatar: '/images/avatars/avatar-6.webp',
+    avatar: withBasePath('/images/avatars/avatar-6.webp'),
     avatarFallback: 'SP',
     name: 'Sophia Patel',
     amount: 612.0,
@@ -112,7 +113,7 @@ const transactionData: Item[] = [
   },
   {
     id: '7',
-    avatar: '/images/avatars/avatar-7.webp',
+    avatar: withBasePath('/images/avatars/avatar-7.webp'),
     avatarFallback: 'RW',
     name: 'Robert Wilson',
     amount: 445.25,
@@ -122,7 +123,7 @@ const transactionData: Item[] = [
   },
   {
     id: '8',
-    avatar: '/images/avatars/avatar-8.webp',
+    avatar: withBasePath('/images/avatars/avatar-8.webp'),
     avatarFallback: 'LM',
     name: 'Lisa Martinez',
     amount: 297.8,
@@ -132,7 +133,7 @@ const transactionData: Item[] = [
   },
   {
     id: '9',
-    avatar: '/images/avatars/avatar-9.webp',
+    avatar: withBasePath('/images/avatars/avatar-9.webp'),
     avatarFallback: 'MT',
     name: 'Michael Thompson',
     amount: 756.9,
@@ -142,7 +143,7 @@ const transactionData: Item[] = [
   },
   {
     id: '10',
-    avatar: '/images/avatars/avatar-10.webp',
+    avatar: withBasePath('/images/avatars/avatar-10.webp'),
     avatarFallback: 'AJ',
     name: 'Amanda Johnson',
     amount: 189.5,
@@ -152,7 +153,7 @@ const transactionData: Item[] = [
   },
   {
     id: '11',
-    avatar: '/images/avatars/avatar-11.webp',
+    avatar: withBasePath('/images/avatars/avatar-11.webp'),
     avatarFallback: 'KB',
     name: 'Kevin Brown',
     amount: 1024.75,
@@ -162,7 +163,7 @@ const transactionData: Item[] = [
   },
   {
     id: '12',
-    avatar: '/images/avatars/avatar-12.webp',
+    avatar: withBasePath('/images/avatars/avatar-12.webp'),
     avatarFallback: 'SD',
     name: 'Sarah Davis',
     amount: 367.2,
@@ -172,7 +173,7 @@ const transactionData: Item[] = [
   },
   {
     id: '13',
-    avatar: '/images/avatars/avatar-13.webp',
+    avatar: withBasePath('/images/avatars/avatar-13.webp'),
     avatarFallback: 'CG',
     name: 'Christopher Garcia',
     amount: 598.45,
@@ -182,7 +183,7 @@ const transactionData: Item[] = [
   },
   {
     id: '14',
-    avatar: '/images/avatars/avatar-14.webp',
+    avatar: withBasePath('/images/avatars/avatar-14.webp'),
     avatarFallback: 'JR',
     name: 'Jennifer Rodriguez',
     amount: 821.3,
@@ -192,7 +193,7 @@ const transactionData: Item[] = [
   },
   {
     id: '15',
-    avatar: '/images/avatars/avatar-15.webp',
+    avatar: withBasePath('/images/avatars/avatar-15.webp'),
     avatarFallback: 'DM',
     name: 'Daniel Miller',
     amount: 156.75,
@@ -202,7 +203,7 @@ const transactionData: Item[] = [
   },
   {
     id: '16',
-    avatar: '/images/avatars/avatar-16.webp',
+    avatar: withBasePath('/images/avatars/avatar-16.webp'),
     avatarFallback: 'NW',
     name: 'Nicole White',
     amount: 934.1,
@@ -212,7 +213,7 @@ const transactionData: Item[] = [
   },
   {
     id: '17',
-    avatar: '/images/avatars/avatar-17.webp',
+    avatar: withBasePath('/images/avatars/avatar-17.webp'),
     avatarFallback: 'AL',
     name: 'Anthony Lopez',
     amount: 412.85,
@@ -222,7 +223,7 @@ const transactionData: Item[] = [
   },
   {
     id: '18',
-    avatar: '/images/avatars/avatar-18.webp',
+    avatar: withBasePath('/images/avatars/avatar-18.webp'),
     avatarFallback: 'MH',
     name: 'Michelle Harris',
     amount: 675.5,
@@ -232,7 +233,7 @@ const transactionData: Item[] = [
   },
   {
     id: '19',
-    avatar: '/images/avatars/avatar-19.webp',
+    avatar: withBasePath('/images/avatars/avatar-19.webp'),
     avatarFallback: 'JC',
     name: 'James Clark',
     amount: 289.95,
@@ -242,7 +243,7 @@ const transactionData: Item[] = [
   },
   {
     id: '20',
-    avatar: '/images/avatars/avatar-20.webp',
+    avatar: withBasePath('/images/avatars/avatar-20.webp'),
     avatarFallback: 'RL',
     name: 'Rachel Lewis',
     amount: 1156.25,
@@ -252,7 +253,7 @@ const transactionData: Item[] = [
   },
   {
     id: '21',
-    avatar: '/images/avatars/avatar-1.webp',
+    avatar: withBasePath('/images/avatars/avatar-1.webp'),
     avatarFallback: 'TY',
     name: 'Thomas Young',
     amount: 543.6,
@@ -262,7 +263,7 @@ const transactionData: Item[] = [
   },
   {
     id: '22',
-    avatar: '/images/avatars/avatar-2.webp',
+    avatar: withBasePath('/images/avatars/avatar-2.webp'),
     avatarFallback: 'SB',
     name: 'Stephanie Brown',
     amount: 789.3,
@@ -272,7 +273,7 @@ const transactionData: Item[] = [
   },
   {
     id: '23',
-    avatar: '/images/avatars/avatar-3.webp',
+    avatar: withBasePath('/images/avatars/avatar-3.webp'),
     avatarFallback: 'BM',
     name: 'Brandon Moore',
     amount: 425.75,
@@ -282,7 +283,7 @@ const transactionData: Item[] = [
   },
   {
     id: '24',
-    avatar: '/images/avatars/avatar-4.webp',
+    avatar: withBasePath('/images/avatars/avatar-4.webp'),
     avatarFallback: 'KT',
     name: 'Kelly Taylor',
     amount: 1203.5,
@@ -292,7 +293,7 @@ const transactionData: Item[] = [
   },
   {
     id: '25',
-    avatar: '/images/avatars/avatar-5.webp',
+    avatar: withBasePath('/images/avatars/avatar-5.webp'),
     avatarFallback: 'MA',
     name: 'Mark Anderson',
     amount: 356.2,

@@ -10,6 +10,7 @@ import { BackgroundRippleEffect } from '@/components/ui/background-ripple'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import UserProfileTabs from '@/views/pages/user-profile/user-profile-tabs'
+import { withBasePath } from '@/lib/with-base-path'
 
 const UserProfile = () => {
   return (
@@ -25,7 +26,11 @@ const UserProfile = () => {
           <CardContent>
             <div className='flex items-end gap-4 pb-1 max-md:flex-col max-md:items-center md:flex-nowrap md:gap-6'>
               <Avatar className='ring-card z-3 -mt-12 size-28 rounded-md ring-4 after:rounded-[inherit] md:-mt-14'>
-                <AvatarImage src='/images/avatars/avatar-1.webp' alt='John Doe' className='rounded-[inherit]' />
+                <AvatarImage
+                  src={withBasePath('/images/avatars/avatar-1.webp')}
+                  alt='John Doe'
+                  className='rounded-[inherit]'
+                />
               </Avatar>
 
               <div className='min-w-0 flex-1 space-y-2 text-center md:text-left'>

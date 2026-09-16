@@ -11,57 +11,58 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { withBasePath } from '@/lib/with-base-path'
 
 const countries = [
   {
     value: 'india',
     label: 'India',
-    flag: '/images/flags/india.webp'
+    flag: withBasePath('/images/flags/india.webp')
   },
   {
     value: 'china',
     label: 'China',
-    flag: '/images/flags/china.webp'
+    flag: withBasePath('/images/flags/china.webp')
   },
   {
     value: 'monaco',
     label: 'Monaco',
-    flag: '/images/flags/monaco.webp'
+    flag: withBasePath('/images/flags/monaco.webp')
   },
   {
     value: 'serbia',
     label: 'Serbia',
-    flag: '/images/flags/serbia.webp'
+    flag: withBasePath('/images/flags/serbia.webp')
   },
   {
     value: 'romania',
     label: 'Romania',
-    flag: '/images/flags/romania.webp'
+    flag: withBasePath('/images/flags/romania.webp')
   },
   {
     value: 'mayotte',
     label: 'Mayotte',
-    flag: '/images/flags/mayotte.webp'
+    flag: withBasePath('/images/flags/mayotte.webp')
   },
   {
     value: 'iraq',
     label: 'Iraq',
-    flag: '/images/flags/iraq.webp'
+    flag: withBasePath('/images/flags/iraq.webp')
   },
   {
     value: 'syria',
     label: 'Syria',
-    flag: '/images/flags/syria.webp'
+    flag: withBasePath('/images/flags/syria.webp')
   },
   {
     value: 'korea',
     label: 'Korea',
-    flag: '/images/flags/korea.webp'
+    flag: withBasePath('/images/flags/korea.webp')
   },
   {
     value: 'zimbabwe',
     label: 'Zimbabwe',
-    flag: '/images/flags/zimbabwe.webp'
+    flag: withBasePath('/images/flags/zimbabwe.webp')
   }
 ]
 

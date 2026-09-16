@@ -5,9 +5,11 @@ import { NextResponse } from 'next/server'
 
 const NAV_APPS_URL = 'https://cdn.shadcnstudio.com/ss-assets/template/admincn/nav-apps.json'
 
+export const dynamic = 'force-static'
+
 export async function GET() {
   try {
-    const response = await fetch(NAV_APPS_URL, { cache: 'no-store' })
+    const response = await fetch(NAV_APPS_URL, { cache: 'force-cache' })
 
     if (!response.ok) {
       return NextResponse.json([], { status: 502 })

@@ -17,6 +17,7 @@ import { ChevronLeftIcon, ChevronRightIcon, EllipsisVerticalIcon } from 'lucide-
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
+import { withBasePath } from '@/lib/with-base-path'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -84,7 +85,9 @@ export const columns: ColumnDef<Item>[] = [
     cell: ({ row }) => (
       <img
         src={
-          row.getValue('paidBy') === 'mastercard' ? '/images/datatable/image-1.webp' : '/images/datatable/image-2.webp'
+          row.getValue('paidBy') === 'mastercard'
+            ? withBasePath('/images/datatable/image-1.webp')
+            : withBasePath('/images/datatable/image-2.webp')
         }
         alt='Payment platform'
         className='w-10.5'

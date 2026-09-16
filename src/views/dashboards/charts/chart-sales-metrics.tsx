@@ -15,6 +15,7 @@ import {
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { type ChartConfig, ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart'
+import { withBasePath } from '@/lib/with-base-path'
 
 const salesPlanPercentage = 54
 const totalBars = 24
@@ -97,7 +98,7 @@ const SalesMetricsCard = ({ className }: { className?: string }) => {
           <div className='flex flex-col justify-between gap-7 lg:col-span-3'>
             <span className='text-lg font-semibold'>Sales metrics</span>
             <div className='flex items-center gap-3'>
-              <img src='/images/brands/logo-square.webp' className='size-10.5 rounded-lg' alt='logo' />
+              <img src={withBasePath('/images/brands/logo-square.webp')} className='size-10.5 rounded-lg' alt='logo' />
               <div className='flex flex-col gap-0.5'>
                 <span className='text-xl font-medium'>Sandy&apos; Company</span>
                 <span className='text-muted-foreground text-sm'>sandy@company.com</span>
