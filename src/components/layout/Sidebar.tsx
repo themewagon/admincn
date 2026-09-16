@@ -469,7 +469,7 @@ const SidebarLayout = () => {
           href: app.href,
           badge: 'Pro',
           badgeClassName: 'right-8',
-          ...(app.openInNewTab ? { target: '_blank' as const } : {})
+          ...(app.openInNewTab ? { target: '_self' as const } : {})
         }))
       )
     })

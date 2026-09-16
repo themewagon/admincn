@@ -4,6 +4,7 @@
 import { Fragment } from 'react'
 
 import { usePathname } from 'next/navigation'
+import Script from 'next/script'
 
 // Third-party Imports
 import { LanguagesIcon } from 'lucide-react'
@@ -68,7 +69,7 @@ const Header = () => {
               Star
             </a>
           </div>
-          <script async defer src='https://buttons.github.io/buttons.js'></script>
+          <Script src='https://buttons.github.io/buttons.js' strategy='lazyOnload' />
           <ModeToggle />
           <LanguageDropdown
             trigger={

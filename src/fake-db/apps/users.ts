@@ -88,15 +88,15 @@ export const users: AppUser[] = [
     socialLinks: [
       {
         platform: 'twitter',
-        url: 'https://twitter.com/zsasza'
+        url: '#!'
       },
       {
         platform: 'linkedin',
-        url: 'https://linkedin.com/in/zsasza-mccleverty'
+        url: '#!'
       },
       {
         platform: 'github',
-        url: 'https://github.com/zsasza'
+        url: '#!'
       }
     ],
     tasksDone: 800,
@@ -323,11 +323,11 @@ export const users: AppUser[] = [
     socialLinks: [
       {
         platform: 'linkedin',
-        url: 'https://linkedin.com/in/galen-slixby'
+        url: '#!'
       },
       {
         platform: 'github',
-        url: 'https://github.com/gslixby'
+        url: '#!'
       }
     ],
     tasksDone: 973,
@@ -585,11 +585,11 @@ export const users: AppUser[] = [
     socialLinks: [
       {
         platform: 'twitter',
-        url: 'https://twitter.com/hredmore'
+        url: '#!'
       },
       {
         platform: 'dribbble',
-        url: 'https://dribbble.com/hredmore'
+        url: '#!'
       }
     ],
     tasksDone: 1146,
@@ -876,15 +876,15 @@ export const users: AppUser[] = [
     socialLinks: [
       {
         platform: 'linkedin',
-        url: 'https://linkedin.com/in/marjory-sicely'
+        url: '#!'
       },
       {
         platform: 'github',
-        url: 'https://github.com/msicely'
+        url: '#!'
       },
       {
         platform: 'twitter',
-        url: 'https://twitter.com/msicely'
+        url: '#!'
       }
     ],
     tasksDone: 1319,
@@ -1181,11 +1181,11 @@ export const users: AppUser[] = [
     socialLinks: [
       {
         platform: 'github',
-        url: 'https://github.com/crisby'
+        url: '#!'
       },
       {
         platform: 'linkedin',
-        url: 'https://linkedin.com/in/cyrill-risby'
+        url: '#!'
       }
     ],
     tasksDone: 1492,
@@ -1419,11 +1419,11 @@ export const users: AppUser[] = [
     socialLinks: [
       {
         platform: 'twitter',
-        url: 'https://twitter.com/mhurran'
+        url: '#!'
       },
       {
         platform: 'instagram',
-        url: 'https://instagram.com/mhurran'
+        url: '#!'
       }
     ],
     tasksDone: 1665,
@@ -1688,11 +1688,11 @@ export const users: AppUser[] = [
     socialLinks: [
       {
         platform: 'linkedin',
-        url: 'https://linkedin.com/in/silvain-halstead'
+        url: '#!'
       },
       {
         platform: 'github',
-        url: 'https://github.com/shalstead'
+        url: '#!'
       }
     ],
     tasksDone: 1838,
@@ -1965,11 +1965,11 @@ export const users: AppUser[] = [
     socialLinks: [
       {
         platform: 'dribbble',
-        url: 'https://dribbble.com/bgallemore'
+        url: '#!'
       },
       {
         platform: 'behance',
-        url: 'https://behance.net/bgallemore'
+        url: '#!'
       }
     ],
     tasksDone: 2011,
@@ -2273,11 +2273,11 @@ export const users: AppUser[] = [
     socialLinks: [
       {
         platform: 'twitter',
-        url: 'https://twitter.com/klitterick'
+        url: '#!'
       },
       {
         platform: 'linkedin',
-        url: 'https://linkedin.com/in/kathryne-litterick'
+        url: '#!'
       }
     ],
     tasksDone: 2184,
@@ -2518,15 +2518,15 @@ export const users: AppUser[] = [
     socialLinks: [
       {
         platform: 'github',
-        url: 'https://github.com/eklasen'
+        url: '#!'
       },
       {
         platform: 'linkedin',
-        url: 'https://linkedin.com/in/elke-klasen'
+        url: '#!'
       },
       {
         platform: 'facebook',
-        url: 'https://facebook.com/eklasen'
+        url: '#!'
       }
     ],
     tasksDone: 2357,

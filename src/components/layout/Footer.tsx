@@ -10,7 +10,7 @@ const Footer = () => {
           <Link href='https://shadcnstudio.com' target='_blank' className='text-primary hover:underline'>
             shadcn/studio
           </Link>
-          , Made for better web design
+          , Made for better web design &bull; Distributed by <Link href="https://themewagon.com" target="_blank" className='text-primary hover:underline'>ThemeWagon</Link>
         </p>
         <div className='flex items-center gap-5 max-sm:hidden'>
           <Link
